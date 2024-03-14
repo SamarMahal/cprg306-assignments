@@ -41,9 +41,9 @@ function MealIdeasComponent({ ingredient }) {
 
   return (
     <div>
-      <h1 className="text-xl md:text-4xl font-medium mb-1 md:mb-8 ml-4 md:ml-20 p-2 md:p-8 text-gray-400 md:text-white shadow-lg
+      <h1 className="text-xl md:text-4xl font-medium mb-1 md:mb-8 ml-4 md:ml-20 p-2 md:p-8 text-gray-400 md:text-black shadow-lg
 ">
-        Meal Ideas
+        Meal Ideas ↓
       </h1>
       <ul className="margin-left: 5rem;">
         {meals.length > 0 ? (
@@ -53,12 +53,12 @@ function MealIdeasComponent({ ingredient }) {
               <img
                 src={meal.strMealThumb}
                 alt={meal.strMeal}
-                style={{ width: "120px", height: "130px" }}
+                style={{ width: "90px", height: "80px" }}
               />
             </li>
           ))
         ) : (
-          <p>no ideas.</p>
+          <p>No meal selected....</p>
         )}
       </ul>
     </div>
